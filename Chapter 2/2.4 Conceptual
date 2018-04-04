@@ -10,4 +10,35 @@ d) worse with large variance of error terms, since flexible methods fit to the n
 
 2. Classification or regression? Inference or prediction? Provide n and p.
 a) Regression, inference of CEO salary from firm features. n = 500 firms in the US, p = profit, number of employees, industry. 
-b) Classification, 
+b) Classification, prediction of success or failure of the new product. n = 20 similar products, p = price charged, marketing budget, competition price, 10 other variables.
+c) Regression, prediction of % change in exchange rate from feature of stock market changes. n = 52 weeks, p = % changes in different markets
+
+3. a) N/A for this medium.
+Typical (squared) bias, variance, training error, test error, Bayes (irreducible) error vs flexibility
+
+b)
+i. (squared) bias - decreases monotonically because increases in flexibility
+yield a closer fit
+
+ii. variance - increases monotonically because increases in flexibility mean fitting closely to the data points that we have, and possibly overfitting
+
+iii. training error - decreases monotonically because increases in flexibility
+yield a closer fit
+
+iv. test error - concave up curve because increase in flexibility yields a closer
+fit - more and more accurate - before it overfits
+
+v. Bayes (irreducible) error - defines the lower limit, the test error is bounded 
+below by the irreducible error due to variance in the error (epsilon) in the output 
+values (0 <= value). When the training error is lower than the irreducible error,
+overfitting has taken place.
+The Bayes error rate is defined for classification problems and is determined by 
+the ratio of data points which lie at the 'wrong' side of the decision boundary, 
+(0 <= value < 1). It's flat since it's a lower limit. 
+
+4. 
+a) Classification: any sort of discrete value-assignment: success/failure, age, risk categories. 
+b) Regression: any sort of continuous value-assignment: stock price, population growth %, pollution rates, with relevant features. Inference if it's based on changing one/more factors, prediction if at a certain point in time. 
+c) Cluster analysis: user segmentation, cancer detection/medical imaging, anomaly detection
+
+5. Advantages of very flexible approach: closer fitting to training data, possibly overfitting and inaccurate for training data. 
