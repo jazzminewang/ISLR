@@ -1,0 +1,13 @@
+Statistical learning
+2.4 Exercises
+Let n = sample size, p = number of predictors. 
+
+1. A flexible statistical learning method would be ____ than an inflexible method.
+a) better with a large n, small p 
+b) worse with a small n, large p as it'd overfit.
+c) better with fitting nonlinear relationships - the definition of flexibility is degrees of freedom.
+d) worse with large variance of error terms, since flexible methods fit to the noise of the error terms
+
+2. Classification or regression? Inference or prediction? Provide n and p.
+a) Regression, inference of CEO salary from firm features. n = 500 firms in the US, p = profit, number of employees, industry. 
+b) Classification, 
