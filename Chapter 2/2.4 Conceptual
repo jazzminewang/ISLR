@@ -41,4 +41,13 @@ a) Classification: any sort of discrete value-assignment: success/failure, age, 
 b) Regression: any sort of continuous value-assignment: stock price, population growth %, pollution rates, with relevant features. Inference if it's based on changing one/more factors, prediction if at a certain point in time. 
 c) Cluster analysis: user segmentation, cancer detection/medical imaging, anomaly detection
 
-5. Advantages of very flexible approach: closer fitting to training data, possibly overfitting and inaccurate for training data. 
+5. 
+Advantages/disadvantages of very flexible approach: closer fitting to training data - less bias, more variance. Better fit for nonlinear relationships.
+A more flexible approach is preferable when we are interested in prediction and not interpolation/interpretation of the results.
+A less flexible appraoch is preferable when we are interested in interpretability and inference.
+
+6. Parametric: assumes form of f, the problem now is just estimating the weights of the parameters.
+Non-parametric: does not assume form, and often requires a larger number of observations.
+Parametric approaches simplifies modelling, but can inaccurately estimate f if the form of f is incorrect, or if it's overfit
+
+7. 

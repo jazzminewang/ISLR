@@ -1,0 +1,26 @@
+TOPIC: Linear Regression
+
+- useful tool for predicting quantitative response
+- "
+When we perform multiple linear regression, we usually are interested in answering a few important questions.
+1. Is at least one of the predictors X1 , X2 , . . . , Xp useful in predicting the response?
+2. Do all the predictors help to explain Y, or is only a subset of the predictors useful?
+3. How well does the model fit the data?
+4. Given a set of predictor values, what response value should we predict,
+and how accurate is our prediction?
+"
+- #2: Variable selection
+a. forward: begin w null model, add the variable that results in the lowest RSS. continue until some stopping rule is satisfied.
+b. backward: start with all variables, and remove the one with the largest p-value (least statistically significant), continues until a stopping rule is satisfied.
+c. mixed selection: combo. start with no variables, add one-by-one the vars that give best fit. if at any point one of the vars' p values rise about a threshold, we remove that variable from the model. Continue until all vars outside model would have a large p value if added to model, and vars inside have a sufficiently low p-value.
+
+- #3: Model fit
+2 of the most common numerical measures of model fit: 
+RSE
+R^2 - square of the correlation of the response and variable (simple regression). 
+    - square of correlation between response and fitted linear model
+    - value close to 1 == model explains a large portion of the variance in response variable
+    - will always increase when more vars are added to model, even if vars are only weakly associated w/ response
+
+- #4: Predictions
+Prediction intervals are always wider than confidence intervals, bc they incorporate both reducible error (error in estimate for f(X)) and the irreducible error (uncertainty as to how much an individual point will differ from the population regression plane)
