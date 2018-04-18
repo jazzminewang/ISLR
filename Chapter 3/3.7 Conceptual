@@ -3,7 +3,6 @@ eg. the null hypothesis for "TV" is that in the presence of radio ads and newspa
 The low p-values for TV and radio mean that they are statistially significant, and therefore that the null hypothesis is false for those variables.
 The high p-value for newspaper means that it is not statistically significant, and therefore that the null hypothesis holds true. 
 
-
 2. 
 The KNN classifier and KNN regression formulae are closely related - the classifier produces a qualitative output (classification), whereas the regression predicts a quantitative value. 
 
@@ -13,3 +12,16 @@ a) iii.
 b) female w/ IQ of 110 and GPA 4.0 = 137.1
 c) False. statistical significance is shown through p-value of the coefficient, not with the value of the coefficient itself. 
 
+4.
+Residual sum of squares = sum of the squares of residuals (deviations predicted from actual empirical from empirical values of data).
+A small RSS = tight fit of the model to the data.
+a) if true rship is linear, I would expect cubic regression to have a lower training RSS b/c of tighter fit
+b) opposite - cubic = higher test RSS bc it would be overfit to the training data (more error)
+c) cubic would always have lower training RSS bc of higher flexibility.
+d) not enough information since we don't know "how far it is from linear". 
+
+5. TBD - do with David/Diana
+
+6. ibid
+
+7. ibid
