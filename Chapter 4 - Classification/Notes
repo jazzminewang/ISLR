@@ -1,0 +1,29 @@
+Linear regression assumes response variable is quantitative. But what about qualitative response variables?
+The dummy variable approach w linear reg cannot accommodate qualitative responses w >2 levels.
+
+1. Logistic regression
+-log-odds / logit (log of odds). The odds is p(X)/[1/p(X)] and can take on any value between 0 and infinity, which indicate very low and very high probabilities of default, respectively. (default is specific to the example on p. 132)
+- to estimate reg coefficients in ch3, we used the least squares approach. For classification, we use the more
+general method of "maximum likelihood" (better statistical properties), which can be foramlized as a likelihood function.
+
+The least squares approach is a special case of maximum likelihood.
+
+A large absolute value of the z-statistic indicates evidence against the null hypothesis.
+
+2. Linear discriminant analysis (LDA)
+Motivation: 
+- when classes are well-separated, parameter estimates for logistic regression model are unstable
+- if n (sample size) is small, and distribution of predictors X is approximately normal in each of the classes
+- linear discriminant analysis is popular when we have >2 response classes
+
+Bayes' Theorem:
+- *Review/explain the theorem with David/Diana
+- Linear discriminant analysis (LDA) approximates the 
+- decision boundaries classify the predictor space into regions. the Bayes classifier will classify an observation according to the region in which it is located.
+- the higher ratio of p:n (parameters to number of samples), the more we expect this overfitting to play a role
+- *What is the null classifier?
+- confusion matrix compares LDA predicted class and true class. 
+- ROC curve simultaneously displays the two types of errors for all thresholds - varying the classifier threholds changes the true positive and false positive rate. Also known as sensitivity & specificity.
+
+
+3. K-nearest neighbors
