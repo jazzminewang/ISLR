@@ -1,0 +1,15 @@
+1. The null hypothesis is a logical "Not". In this case, the null hypothesis for each variable is that it has no effect.
+eg. the null hypothesis for "TV" is that in the presence of radio ads and newspaper ads, TV ads have no effect on sales. 
+The low p-values for TV and radio mean that they are statistially significant, and therefore that the null hypothesis is false for those variables.
+The high p-value for newspaper means that it is not statistically significant, and therefore that the null hypothesis holds true. 
+
+
+2. 
+The KNN classifier and KNN regression formulae are closely related - the classifier produces a qualitative output (classification), whereas the regression predicts a quantitative value. 
+
+3. 
+Y = 50 + 20(gpa) + 0.07(iq) + 35(gender) + 0.01(gpa * iq) - 10 (gpa * gender)
+a) iii.
+b) female w/ IQ of 110 and GPA 4.0 = 137.1
+c) False. statistical significance is shown through p-value of the coefficient, not with the value of the coefficient itself. 
+

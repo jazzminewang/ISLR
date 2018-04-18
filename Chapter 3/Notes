@@ -24,3 +24,20 @@ R^2 - square of the correlation of the response and variable (simple regression)
 
 - #4: Predictions
 Prediction intervals are always wider than confidence intervals, bc they incorporate both reducible error (error in estimate for f(X)) and the irreducible error (uncertainty as to how much an individual point will differ from the population regression plane)
+Confidence interval == uncertainty about the average __ over a large sample
+Prediction interval == uncertainty around __ for a specific instance
+
+2 assumptions made with linear model: that rship between predictors and response are additive & linear
+additive: effect of changes in a predictor on a response is indpt of values of other predictor
+
+Classic extensions to address assumptions:
+- to remove additive assumption, we need to allow for interaction effects between predictors; to do that, we can use an interaction term (product of the two predictors)
+
+Problems w linear regression model:
+1. Non-linearity of the response-predictor relationships. 2. Correlation of error terms.
+3. Non-constant variance of error terms.
+4. Outliers.
+5. High-leverage points (unusual value for predictor)
+6. Collinearity (2/2+ predictor vars related to each other)
+
+Linear Regression vs K-Nearest Neighbours regression
